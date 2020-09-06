@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <!-- Hit Spacebar to toggle. Move your mouse to draw. -->
+
+  <body onload="setup()">
+    <div class="center-horizontally">
+      <p id="instructions">Mouse your cursor over this canvas:</p>
+    </div>
+
+    <div class="center-horizontally">
+      <canvas id="canvas" tabindex="0" width="500" height="300"></canvas>
+    </div>
+
+    <div class="color-group">
+      <button class="color" id="black"></button>
+      <button class="color" id="red"></button>
+      <button class="color" id="green"></button>
+      <button class="color" id="blue"></button>
+      <button class="color" id="yellow"></button>
+      <button class="color" id="orange"></button>
+      <button class="color" id="white"></button>
+      <button id="clear">Clear</button>
+      <button id="download">Download</button>
+    </div>
+
+    <img
+      id="canvasimg"
+      style="position: absolute; top: 10%; left: 52%"
+      style="display: none"
+    />
+
+    <a id="download-helper-link" tabindex="-1" style="display: none"></a>
+  </body>
+</html>

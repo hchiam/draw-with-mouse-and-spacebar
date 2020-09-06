@@ -1,0 +1,23 @@
+{
+  "name": "draw-with-mouse-and-spacebar",
+  "version": "1.0.0",
+  "description": "No pen? Draw by moving the mouse and hitting spacebar to toggle.",
+  "main": "index.js",
+  "scripts": {
+    "start": "yarn sass; open index.html",
+    "sass": "sass style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hchiam/draw-with-mouse-and-spacebar.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hchiam/draw-with-mouse-and-spacebar/issues"
+  },
+  "homepage": "https://github.com/hchiam/draw-with-mouse-and-spacebar#readme",
+  "dependencies": {
+    "sass": "^1.26.10"
+  }
+}
