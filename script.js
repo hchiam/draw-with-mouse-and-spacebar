@@ -87,7 +87,8 @@ function setup() {
 
 function hitToggleKey(e) {
   var keyCode = e.which || event.keyCode;
-  var hitCommand = keyCode === 224;
+  var hitCommand =
+    keyCode === 224 || keyCode === 91 || keyCode === 93 || e.metaKey;
   var hitEnter = keyCode === 13;
   var hitControl = keyCode === 17;
   var hitSpacebar = keyCode === 32;
