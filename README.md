@@ -6,6 +6,8 @@ Live demo: <https://codepen.io/hchiam/full/JjXOxwd>
 
 Alternate live demo: <https://draw-with-mouse-and-spacebar.surge.sh>
 
+You can also toggle drawing with any of these keys: Ctrl, Command, Enter.
+
 Run demo from this repo using [`yarn`](https://github.com/hchiam/learning-yarn):
 
 ```bash
