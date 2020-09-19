@@ -6,7 +6,7 @@ Live demo: <https://codepen.io/hchiam/full/JjXOxwd>
 
 Alternate live demo: <>
 
-Run demo from this repo:
+Run demo from this repo using [`yarn`](https://github.com/hchiam/learning-yarn):
 
 ```bash
 yarn
