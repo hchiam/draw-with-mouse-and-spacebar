@@ -4,7 +4,7 @@ No pen? Draw by moving the mouse and hitting spacebar to toggle.
 
 Live demo: <https://codepen.io/hchiam/full/JjXOxwd>
 
-Alternate live demo: <>
+Alternate live demo: <https://draw-with-mouse-and-spacebar.surge.sh>
 
 Run demo from this repo using [`yarn`](https://github.com/hchiam/learning-yarn):
 
