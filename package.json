@@ -6,7 +6,7 @@
   "scripts": {
     "start": "yarn sass; open index.html",
     "sass": "sass style.scss style.css",
-    "demo": "bash alternate-live-demo.sh"
+    "demo": "yarn sass; bash alternate-live-demo.sh"
   },
   "repository": {
     "type": "git",
