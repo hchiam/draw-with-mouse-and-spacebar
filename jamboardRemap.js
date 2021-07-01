@@ -118,7 +118,7 @@ javascript: (function () {
     return previousStyles;
   }
 
-  function debounce(theFunction, timeout = 100) {
+  function debounce(theFunction, timeout = 10) {
     /**
      * usage:
      * const doSomethingDebounced = debounce(() => doSomething());
