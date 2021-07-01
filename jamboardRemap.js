@@ -42,7 +42,9 @@ javascript: (function () {
       resetFocusElement.dispatchEvent(new MouseEvent("mousedown"));
       debounce(() => {
         drawingElement.dispatchEvent(new MouseEvent("mousedown"));
-        console.log("TODO: automatically click canvas");
+        console.log(
+          "TODO: automatically click canvas. WIP: forcing user to click works in Firefox, not Chrome."
+        );
       }, 100)();
     }
   });
