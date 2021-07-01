@@ -1,5 +1,8 @@
 javascript: (function () {
   var isDrawing = false;
+  var jamBody = document.querySelector("#jam-body");
+  var drawingElement = jamBody.querySelector(".jam-drawing-element");
+  var canvas = jamBody.querySelector(".jam-drawing-element-canvas");
   var resetFocusElement = document.querySelector(".jam-bar-title-overflow");
   var jamFrameContent = jamBody.querySelector(".jam-frame-content");
 
