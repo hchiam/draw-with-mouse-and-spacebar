@@ -6,6 +6,8 @@ Live demo: <https://codepen.io/hchiam/full/JjXOxwd>
 
 Alternate live demo: <https://draw-with-mouse-and-spacebar.surge.sh>
 
+Or just run this in your browser console, or as a bookmarklet: <https://github.com/hchiam/draw-with-mouse-and-spacebar/blob/master/jamboardRemap.js>
+
 You can also toggle drawing with any of these keys: Ctrl, Command, Enter.
 
 ## Local development:
