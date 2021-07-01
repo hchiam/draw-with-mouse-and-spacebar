@@ -68,7 +68,10 @@ javascript: (function () {
       drawingButton.style.transition = previousButtonStyles.transition;
     }, 3000);
 
+    var ranReminder = false;
     drawingButton.addEventListener("click", function () {
+      if (ranReminder) return;
+      ranReminder = true;
       drawingButton.style.outline = previousButtonStyles.outline;
       drawingButton.style.background = previousButtonStyles.background;
       drawingButton.style.transform = previousButtonStyles.transform;
