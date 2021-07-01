@@ -16,3 +16,9 @@ yarn start
 ```
 
 (If you don't use [`yarn`](https://github.com/hchiam/learning-yarn), edit the `package.json` `"scripts"` section.)
+
+## Deploy:
+
+```bash
+yarn demo
+```
