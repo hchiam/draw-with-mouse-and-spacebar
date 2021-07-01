@@ -15,19 +15,14 @@ javascript: (function () {
 
   var clientX;
   var clientY;
-  document.addEventListener("mousemove", function (event) {
+  document.addEventListener("pointermove", function (event) {
     clientX = event.clientX;
     clientY = event.clientY;
   });
 
   iframe.addEventListener("keyup", function () {
+    isDrawing = !isDrawing;
     debounce(() => {
-      isDrawing = !isDrawing;
-      console.log(
-        "keyup isDrawing",
-        isDrawing,
-        isDrawing ? "pointerdown" : "pointerup"
-      );
       drawingElement.dispatchEvent(
         new PointerEvent(isDrawing ? "pointerdown" : "pointerup", {
           clientX: clientX,
@@ -35,7 +30,22 @@ javascript: (function () {
         })
       );
     })();
+    if (!isDrawing) {
+      preventDrawingInFirefox();
+    } else {
+      restoreDrawingInFirefox();
+    }
   });
+
+  function preventDrawingInFirefox() {
+    drawingElement.style.cursor = "not-allowed";
+    drawingElement.style.pointerEvents = "none";
+  }
+  function restoreDrawingInFirefox() {
+    drawingElement.style.cursor = previousDrawingElementStyles.cursor;
+    drawingElement.style.pointerEvents =
+      previousDrawingElementStyles.pointerEvents;
+  }
 
   drawingElement.addEventListener("mousemove", function (event) {
     event.preventDefault();
@@ -93,7 +103,14 @@ javascript: (function () {
 
   function getPreviousStyles(
     element,
-    stylesIUse = ["outline", "background", "transform", "transition"]
+    stylesIUse = [
+      "outline",
+      "background",
+      "transform",
+      "transition",
+      "cursor",
+      "pointerEvents",
+    ]
   ) {
     var previousStyles = {};
     stylesIUse.forEach((styleProperty) => {
