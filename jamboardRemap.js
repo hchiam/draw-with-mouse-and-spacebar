@@ -30,10 +30,10 @@ javascript: (function () {
         })
       );
     })();
-    if (!isDrawing) {
-      preventDrawingInFirefox();
-    } else {
+    if (isDrawing) {
       restoreDrawingInFirefox();
+    } else {
+      preventDrawingInFirefox();
     }
   });
 
@@ -48,7 +48,6 @@ javascript: (function () {
   }
 
   drawingElement.addEventListener("mousemove", function (event) {
-    event.preventDefault();
     if (isDrawing) {
       drawingElement.dispatchEvent(
         new PointerEvent("pointermove", { clientX: clientX, clientY: clientY })
