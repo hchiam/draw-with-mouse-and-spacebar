@@ -1,6 +1,8 @@
 javascript: (function () {
   var isDrawing = false;
-  var drawingElement = document.querySelector("#jam-body .jam-drawing-element");
+  var resetFocusElement = document.querySelector(".jam-bar-title-overflow");
+  var jamFrameContent = jamBody.querySelector(".jam-frame-content");
+
   var iframe = document
     .querySelector(".docs-texteventtarget-iframe")
     .contentWindow.document.querySelector("body");
@@ -34,6 +36,11 @@ javascript: (function () {
       restoreDrawingInFirefox();
     } else {
       preventDrawingInFirefox();
+      resetFocusElement.dispatchEvent(new MouseEvent("mousedown"));
+      debounce(() => {
+        drawingElement.dispatchEvent(new MouseEvent("mousedown"));
+        console.log("TODO: automatically click canvas");
+      }, 100)();
     }
   });
 
