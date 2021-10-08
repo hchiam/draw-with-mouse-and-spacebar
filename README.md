@@ -10,7 +10,7 @@ Or just run this in your browser console, or as a bookmarklet: <https://github.c
 
 You can also toggle drawing with any of these keys: Ctrl, Command, Enter.
 
-## Local development:
+## Local development
 
 Run demo from within this repo using [`yarn`](https://github.com/hchiam/learning-yarn):
 
@@ -21,7 +21,7 @@ yarn start
 
 (If you don't use [`yarn`](https://github.com/hchiam/learning-yarn), edit the `package.json` `"scripts"` section.)
 
-## Deploy:
+## Deploy
 
 ```bash
 yarn demo
