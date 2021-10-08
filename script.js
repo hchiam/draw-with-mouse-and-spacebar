@@ -125,6 +125,8 @@ function draw() {
 }
 
 function erase() {
+  var yes = confirm("Do you want to clear the whole drawing?");
+  if (!yes) return;
   ctx.clearRect(0, 0, w, h);
   document.getElementById("canvasimg").style.display = "none";
 
