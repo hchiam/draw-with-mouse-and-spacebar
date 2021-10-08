@@ -66,29 +66,53 @@ button:not(:last-child) {
 #red {
   background: red;
 }
+#red:hover:before, #red:focus:before {
+  content: "Red";
+}
 
 #orange {
   background: orange;
+}
+#orange:hover:before, #orange:focus:before {
+  content: "Orange";
+  color: black;
 }
 
 #yellow {
   background: yellow;
 }
+#yellow:hover:before, #yellow:focus:before {
+  content: "Yellow";
+  color: black;
+}
 
 #green {
   background: green;
+}
+#green:hover:before, #green:focus:before {
+  content: "Green";
 }
 
 #blue {
   background: blue;
 }
+#blue:hover:before, #blue:focus:before {
+  content: "Blue";
+}
 
 #white {
   background: white;
 }
+#white:hover:before, #white:focus:before {
+  content: "White";
+  color: black;
+}
 
 #black {
   background: black;
+}
+#black:hover:before, #black:focus:before {
+  content: "Black";
 }
 
 /*# sourceMappingURL=style.css.map */
