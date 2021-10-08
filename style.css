@@ -18,6 +18,10 @@ canvas {
   background: white;
   outline: none;
   border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+canvas:focus {
+  outline: 10px solid #555;
 }
 
 button:not(:last-child) {
@@ -29,11 +33,14 @@ button:not(:last-child) {
 .color-group {
   display: flex;
   flex-direction: row;
-  background: #555;
+  background: #333;
   padding: 10px;
   max-width: 600px;
   margin: auto;
   border-radius: 0.25rem;
+}
+.color-group:hover, .color-group:focus-within {
+  background: #555;
 }
 .color-group button {
   flex: 1;
@@ -43,17 +50,13 @@ button:not(:last-child) {
   border-radius: 1rem;
   font-size: medium;
 }
-.color-group button:hover {
+.color-group button:hover, .color-group button:focus {
   background: #555;
   color: white;
-  border: 4px solid white !important;
+  outline: 4px solid white !important;
 }
-.color-group button:hover#white {
-  border-color: black !important;
-}
-.color-group button:focus {
-  outline: none;
-  border: none;
+.color-group button:hover#white, .color-group button:focus#white {
+  outline-color: black !important;
 }
 
 .center-horizontally {
